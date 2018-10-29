@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="panel">
+  <view class="chart-with-img" wx:for="{{grids}}" wx:for-item="grid" wx:key="{{grid.grid}}">
+    <image src="../../images/{{grid.id}}.png" mode="aspectFit" bindtap="open" data-grid="{{grid}}"></image>
+    {{grid.name}}
+  </view>
+</view>
