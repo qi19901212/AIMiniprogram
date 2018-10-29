@@ -18,7 +18,7 @@ Page({
       mode: 'ocr'
     }, {
       id: 'ocrBizlicenseocr',
-      name: '营业执照OCR',
+      name: '营业执照OCR' ,
       mode: 'ocr'
     }, {
       id: 'ocrCreditcardocr',
@@ -47,7 +47,7 @@ Page({
     console.log(e)
     var id = e.target.dataset.grid.id
     wx.navigateTo({
-      url: '../tengxun/ocr',
+      url: '../tengxun/ocr/'+id,
     })
   }
 })

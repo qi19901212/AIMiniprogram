@@ -4,7 +4,14 @@
     "pages/logs/logs",
     "pages/tengxun/tengxun",
     "pages/tengxun/index",
-    "pages/tengxun/ocr"
+    "pages/tengxun/ocr/ocrIdcardocr",
+    "pages/tengxun/ocr/ocrDriverlicenseocr",
+    "pages/tengxun/ocr/ocrGeneralocr",
+    "pages/tengxun/ocr/ocrBizlicenseocr",
+    "pages/tengxun/ocr/ocrCreditcardocr",
+    "pages/tengxun/ocr/ocrHandwritingocr",
+    "pages/tengxun/ocr/ocrPlateocr",
+    "pages/tengxun/ocr/ocrBcocr"
   ],
   "window":{
     "backgroundTextStyle":"light",
