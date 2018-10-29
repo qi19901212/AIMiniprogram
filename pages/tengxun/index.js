@@ -5,37 +5,38 @@ const app = getApp()
 Page({
   data: {
     grids: [{
-      id: 'ocrIdcardocr',
-      name: '身份证OCR',
-      mode: 'ocr'
+      id: 'ocr',
+      name: 'OCR',
     }, {
-      id: 'ocrDriverlicenseocr',
-      name: '行驶证驾驶证OCR',
-      mode: 'ocr'
+      id: 'face',
+      name: '人脸识别',
     }, {
-      id: 'ocrGeneralocr',
-      name: '通用OCR',
-      mode: 'ocr'
+      id: 'ptu',
+      name: '图片特效',
     }, {
-      id: 'ocrBizlicenseocr',
-      name: '营业执照OCR' ,
-      mode: 'ocr'
+        id: 'vision',
+      name: '图片识别',
     }, {
-      id: 'ocrCreditcardocr',
-      name: '银行卡OCR',
-      mode: 'ocr'
+      id: 'image',
+      name: '敏感信息审核',
     }, {
-      id: 'ocrHandwritingocr',
-      name: '手写体OCR',
-      mode: 'ocr'
+      id: 'nlp',
+      name: '智能闲聊',
     }, {
-      id: 'ocrPlateocr',
-      name: '车牌OCR',
-      mode: 'ocr'
+      id: 'nlp',
+      name: '机器翻译',
     }, {
-      id: 'ocrBcocr',
-      name: '名片OCR',
-      mode: 'ocr'
+      id: 'nlp',
+      name: '基础文本分析',
+    }, {
+      id: 'nlp',
+      name: '语义解析',
+    }, {
+      id: 'asr',
+      name: '语音识别',
+    }, {
+      id: 'tts',
+      name: '语音合成',
     }]
   },
 
@@ -47,7 +48,7 @@ Page({
     console.log(e)
     var id = e.target.dataset.grid.id
     wx.navigateTo({
-      url: '../tengxun/ocr/'+id,
+      url: '../tengxun/'+id,
     })
   }
 })

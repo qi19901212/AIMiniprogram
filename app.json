@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/tengxun/tengxun",
+    "pages/tengxun/ocr",
     "pages/tengxun/index",
     "pages/tengxun/ocr/ocrIdcardocr",
     "pages/tengxun/ocr/ocrDriverlicenseocr",
@@ -11,7 +12,16 @@
     "pages/tengxun/ocr/ocrCreditcardocr",
     "pages/tengxun/ocr/ocrHandwritingocr",
     "pages/tengxun/ocr/ocrPlateocr",
-    "pages/tengxun/ocr/ocrBcocr"
+    "pages/tengxun/ocr/ocrBcocr",
+    "pages/tengxun/face",
+    "pages/tengxun/ptu",
+    "pages/tengxun/vision",
+    "pages/tengxun/image",
+    "pages/tengxun/nlp",
+    "pages/tengxun/asr",
+    "pages/tengxun/tts",
+    "pages/tengxun/tts/youtu",
+    "pages/tengxun/tts/ailab"
   ],
   "window":{
     "backgroundTextStyle":"light",

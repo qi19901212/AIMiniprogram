@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
@@ -48,6 +48,12 @@
 					"id": -1,
 					"name": "tengxun index",
 					"pathName": "pages/tengxun/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "TTS",
+					"pathName": "pages/tengxun/tts",
 					"query": ""
 				}
 			]
