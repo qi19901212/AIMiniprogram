@@ -75,7 +75,6 @@ Page({
             cloudPath: cloudPath,
             filePath: pathMp3, // 小程序临时文件路径
             success: res => {
-              console.log("11111111", res.fileID)
               wx.cloud.getTempFileURL({
                 fileList: [res.fileID],
                 success: res => {

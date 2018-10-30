@@ -1,4 +1,8 @@
 /* pages/tengxun/tts/ailab.wxss */
 .tts_button{
-  margin-top: 200px
+  margin-top: 20px
+}
+.read_text{
+  width: 100%;
+  height: 200px
 }

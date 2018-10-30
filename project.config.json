@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
@@ -51,9 +51,15 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "TTS",
-					"pathName": "pages/tengxun/tts",
+					"id": 2,
+					"name": "跨年龄",
+					"pathName": "pages/tengxun/face/faceDetectcrossageface",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "Tx face",
+					"pathName": "pages/tengxun/face/faceFaceidentify",
 					"query": ""
 				}
 			]

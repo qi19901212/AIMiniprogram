@@ -1,10 +1,10 @@
 <view class='page'>
 <form bindsubmit="formSubmit">
-  <view class="section">
+  <view class="read_text">
     <input maxlength="100" placeholder="最大输入长度100" name="content"/>
   </view>
   <view class="tts_button ">
-    <button class="weui-btn" formType="submit" type="primary" >页面主操作 Normal</button>
+    <button class="weui-btn" formType="submit" type="primary" >点击播放</button>
   </view>
   </form>
 </view>

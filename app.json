@@ -13,7 +13,6 @@
     "pages/tengxun/ocr/ocrHandwritingocr",
     "pages/tengxun/ocr/ocrPlateocr",
     "pages/tengxun/ocr/ocrBcocr",
-    "pages/tengxun/face",
     "pages/tengxun/ptu",
     "pages/tengxun/vision",
     "pages/tengxun/image",
@@ -21,7 +20,15 @@
     "pages/tengxun/asr",
     "pages/tengxun/tts",
     "pages/tengxun/tts/youtu",
-    "pages/tengxun/tts/ailab"
+    "pages/tengxun/tts/ailab",
+    "pages/tengxun/face",
+    "pages/tengxun/face/faceDetectface",
+    "pages/tengxun/face/faceDetectmultiface",
+    "pages/tengxun/face/faceDetectcrossageface",
+    "pages/tengxun/face/faceFaceshape",
+    "pages/tengxun/face/faceFacecompare",
+    "pages/tengxun/face/faceFaceidentify",
+    "pages/tengxun/face/faceFaceverify"
   ],
   "window":{
     "backgroundTextStyle":"light",

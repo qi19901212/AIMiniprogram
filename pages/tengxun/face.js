@@ -1,66 +1,42 @@
-// pages/tengxun/face.js
+//index.js
+//获取应用实例
+const app = getApp()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    grids: [{
+      id: 'faceDetectface',
+      name: '人脸检测与分析',
+    }, {
+        id: 'faceDetectmultiface',
+        name: '多人脸检测',
+    }, {
+        id: 'faceDetectcrossageface',
+        name: '跨年龄人脸识别',
+    }, {
+        id: 'faceFaceshape',
+        name: '五官定位',
+    }, {
+        id: 'faceFacecompare',
+        name: '人脸对比',
+    }, {
+        id: 'faceFaceidentify',
+        name: '人脸搜索',
+    }, {
+        id: 'faceFaceverify',
+        name: '人脸验证',
+    }]
+  },
+
+  onLoad: function () {
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  open: function (e) {
+    console.log(e)
+    var id = e.target.dataset.grid.id
+    wx.navigateTo({
+      url: '../tengxun/face/' + id,
+    })
   }
 })

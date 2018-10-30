@@ -1,1 +1,1 @@
-/* pages/tengxun/face.wxss */
+@import 'ocr.wxss';

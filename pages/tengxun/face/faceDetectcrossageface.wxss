@@ -1,0 +1,4 @@
+/* pages/tengxun/face/faceDetectcrossageface.wxss */
+face-button{
+  margin-top: 10px;
+}
