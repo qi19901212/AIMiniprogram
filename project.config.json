@@ -41,7 +41,7 @@
 				{
 					"id": 0,
 					"name": "Asr",
-					"pathName": "pages/tengxun/nlp/texttranslate",
+					"pathName": "pages/tengxun/nlp/textdetect",
 					"query": ""
 				},
 				{
