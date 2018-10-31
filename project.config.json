@@ -36,12 +36,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
-					"name": "TOCR",
-					"pathName": "pages/tengxun/ocr",
+					"name": "Asr",
+					"pathName": "pages/tengxun/nlp/texttranslate",
 					"query": ""
 				},
 				{
@@ -58,8 +58,8 @@
 				},
 				{
 					"id": 3,
-					"name": "Tx face",
-					"pathName": "pages/tengxun/face/faceFaceidentify",
+					"name": "voice shibie",
+					"pathName": "pages/tengxun/asr",
 					"query": ""
 				}
 			]

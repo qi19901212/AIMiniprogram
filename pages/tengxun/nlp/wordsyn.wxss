@@ -1,0 +1,2 @@
+/* pages/tengxun/nlp/wordsyn.wxss */
+@import 'wordseg.wxss'

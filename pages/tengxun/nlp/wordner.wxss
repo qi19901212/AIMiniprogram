@@ -1,0 +1,2 @@
+/* pages/tengxun/nlp/wordner.wxss */
+@import 'wordpos.wxss'

@@ -15,7 +15,7 @@ Page({
     time_stamp: 0,
     nonce_str: '',
     image: '',
-    type: 0,
+    type: 1,
     sign: ''
   },
   /**

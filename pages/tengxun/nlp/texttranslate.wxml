@@ -1,0 +1,12 @@
+<view class='page'>
+<form bindsubmit="formSubmit">
+<text>	今天天气怎么样翻译君</text>
+  <view class="read_text">
+    <input maxlength="100" placeholder="最大输入长度100" name="content" />
+  </view>
+  <view class="tts_button ">
+    <button class="weui-btn" formType="submit" type="primary" >开始分析</button>
+  </view>
+  </form>
+</view>
+<text>{{content}}</text>
