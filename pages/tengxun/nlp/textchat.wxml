@@ -1,0 +1,12 @@
+<view class='page'>
+<form bindsubmit="formSubmit">
+<text>基础闲聊接口提供基于文本的基础聊天能力，可以让您的应用快速拥有具备上下文语义理解的机器聊天功能</text>
+  <view class="read_text" style='margin-top:10px'>
+    <input maxlength="100" placeholder="最大输入长度100" name="content" />
+  </view>
+  <view class="tts_button ">
+    <button class="weui-btn" formType="submit" type="primary" >开始分析</button>
+  </view>
+  </form>
+</view>
+<text>{{content}}</text>

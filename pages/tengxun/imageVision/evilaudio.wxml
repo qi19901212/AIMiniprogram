@@ -1,0 +1,2 @@
+<button bindtap='shibie'> 识别音频</button>
+<text class='page'>{{content}}</text>

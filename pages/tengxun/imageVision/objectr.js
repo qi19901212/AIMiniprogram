@@ -1,4 +1,4 @@
-// pages/tengxun/vision.js
+// pages/tengxun/imageVision/objectr.js
 Page({
 
   /**

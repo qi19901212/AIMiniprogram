@@ -1,66 +1,48 @@
-// pages/tengxun/image.js
+//index.js
+//获取应用实例
+const app = getApp()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    grids: [{
+      id: 'terrorism',
+      name: '暴恐识别',
+    }, {
+        id: 'porn',
+      name: '智能鉴黄',
+    }, {
+        id: 'evilaudio',
+      name: '音频鉴黄',
+    }, {
+        id: 'imgtotext',
+        name: '看图说话',
+    }, {
+        id: 'tag',
+        name: '多标签识别',
+    }, {
+        id: 'fuzzy',
+        name: '模糊图片检测',
+    }, {
+        id: 'food',
+        name: '美食图片识别',
+      }, {
+        id: 'scener',
+        name: '场景识别',
+      }, {
+        id: 'objectr',
+        name: '物体识别',
+      }]
+  },
+
+  onLoad: function () {
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  open: function (e) {
+    console.log(e)
+    var id = e.target.dataset.grid.id
+    wx.navigateTo({
+      url: '../tengxun/imageVision/' + id,
+    })
   }
 })

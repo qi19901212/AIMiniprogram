@@ -37,6 +37,9 @@ Page({
     }, {
       id: 'textdetect',
       name: '语种识别',
+    }, {
+      id: 'textchat',
+      name: '智能闲聊'
     }]
   },
 
