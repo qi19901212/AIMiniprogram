@@ -1,7 +1,6 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/tengxun/tengxun",
     "pages/tengxun/ocr",
     "pages/tengxun/index",
@@ -59,13 +58,24 @@
     "pages/tengxun/face/faceFaceshape",
     "pages/tengxun/face/faceFacecompare",
     "pages/tengxun/face/faceFaceidentify",
-    "pages/tengxun/face/faceFaceverify"
+    "pages/tengxun/face/faceFaceverify",
+    "pages/kedaxunfei/index",
+    "pages/kedaxunfei/face/index",
+    "pages/kedaxunfei/filter/index",
+    "pages/kedaxunfei/ltp/index",
+    "pages/kedaxunfei/ocr/index",
+    "pages/kedaxunfei/voice/index",
+    "pages/kedaxunfei/voice/iat",
+    "pages/kedaxunfei/voice/qbh",
+    "pages/kedaxunfei/voice/tts",
+    "pages/kedaxunfei/voice/ise",
+    "pages/kedaxunfei/image/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "requiredBackgroundModes": [
     "audio"
