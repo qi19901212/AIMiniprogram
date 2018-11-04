@@ -14,10 +14,10 @@ Page({
       id: 'ptu',
       name: '图片特效',
     }, {
-        id: 'vision',
+        id: 'imageVision',
       name: '图片识别',
     }, {
-      id: 'image',
+        id: 'imageVision',
       name: '敏感信息审核',
     }, {
       id: 'nlp',

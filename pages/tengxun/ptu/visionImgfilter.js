@@ -24,7 +24,7 @@ Page({
 
   },
   chooseImage: function () {
-   
+
     var that = this
     wx.chooseImage({
       count: 1,
@@ -53,7 +53,6 @@ Page({
           filePath: tempFilePath,
           encoding: 'base64',
           success: function (res) {
-
             that.ocrImage(res.data)
           }
         })
@@ -71,22 +70,25 @@ Page({
     this.requestData.nonce_str = util.generateRandomString(24)
     var base64Param = encodeURIComponent(base64)
     this.requestData.image = base64Param
-    var session_id = util.generateRandomString(24)
+    var session_id=util.generateRandomString(24)
     var map = new Map();
     map.set("app_id", this.requestData.app_id)
     map.set("time_stamp", this.requestData.time_stamp)
     map.set("nonce_str", this.requestData.nonce_str)
-    map.set("image", this.requestData.image)
+    map.set("filter", '1')
     map.set("session_id", session_id)
+    map.set("image", this.requestData.image)
+
     var md5Param = util.signTengxunAI(map)
     this.requestData.sign = md5Param
     var that = this
-    http.req('https://api.ai.qq.com', '/fcgi-bin/vision/vision_imgtotext', {
+    http.req('https://api.ai.qq.com', '/fcgi-bin/vision/vision_imgfilter', {
       app_id: this.requestData.app_id,
       time_stamp: this.requestData.time_stamp,
       nonce_str: this.requestData.nonce_str,
-      image: base64,
+      filter: 1,
       session_id: session_id,
+      image: base64,
       sign: md5Param
     }, function (res) {
       wx.hideLoading()

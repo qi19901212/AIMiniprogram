@@ -1,1 +1,2 @@
-/* pages/tengxun/ptu.wxss */
+/* pages/tengxun/ocr.wxss */
+@import 'index.wxss'

@@ -1,2 +1,11 @@
-<!--pages/tengxun/imageVision.wxml-->
-<text>pages/tengxun/imageVision.wxml</text>
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <view class="weui-grid" hover-class="weui-grid_active">
+                    <view class="weui-grid__label" bindtap='open' data-grid='{{item}}'>{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

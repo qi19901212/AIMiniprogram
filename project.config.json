@@ -41,13 +41,13 @@
 				{
 					"id": 0,
 					"name": "Asr",
-					"pathName": "pages/tengxun/imageVision/evilaudio",
+					"pathName": "pages/tengxun/ptu/ptuFaceage",
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "tengxun index",
-					"pathName": "pages/tengxun/index",
+					"id": 1,
+					"name": "图片特效",
+					"pathName": "pages/tengxun/ptu",
 					"query": ""
 				},
 				{
