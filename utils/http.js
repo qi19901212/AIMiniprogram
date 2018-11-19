@@ -47,7 +47,8 @@ function xunfeiReq(url, data,paramBase64,apiKey, cb, method){
     success: function (res) {
       return typeof cb == "function" && cb(res)
     },
-    fail: function () {
+    fail: function (res) {
+      console.log('request res===',res)
       return typeof cb == "function" && cb(false)
     }
   })

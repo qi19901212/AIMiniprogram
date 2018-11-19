@@ -1,6 +1,7 @@
 var md5 = require('../../../utils/md5.js')
 var http= require('../../../utils/http.js')
 var util = require('../../../utils/util.js')
+var base64 = require('../../../utils/base64.js')
 Page({
 
   /**
@@ -27,7 +28,6 @@ Page({
     wx.showLoading({
       title: '正在加载中...',
     })
-    console.log("tempFilePath==AAAAAAAAAAAA")
     wx.startRecord({
       success(res) {
         var tempFilePath = res.tempFilePath
@@ -40,6 +40,8 @@ Page({
             that.ocrImage(res.data)
           }
         })
+      },fail(res){
+        console.log("res==", res)
       }
     })
     setTimeout(function () {
@@ -50,10 +52,12 @@ Page({
     wx.stopRecord() // 结束录音
   },
   ocrImage: function (base64) {
-    
-    var param = { "engine_type": "sms16k", "aue": "raw" }
-    var xParam = new util.Base64().encode(JSON.stringify(param))
+    console.log("base64==", base64)
+    var param = {"engine_type": "sms16k", "aue": "raw" }
+    base64.encode(param)
+    var xParam=console.log("xParam==", xParam)
     console.log("JSON.stringify(param)==", JSON.stringify(param))
+    xParam ='eyJlbmdpbmVfdHlwZSI6ICJzbXMxNmsiLCJhdWUiOiAicmF3In0='
     console.log("xParam==", xParam)
     var that = this
     http.xunfeiReq('iat',  {
@@ -62,7 +66,7 @@ Page({
       wx.hideLoading()
       console.log("res==", res)
       that.setData({
-        content: JSON.stringify(res.data.data)
+        content: JSON.stringify(res.data)
       })
     }, 'post')
   }
